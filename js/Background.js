@@ -12,7 +12,7 @@ class Background {
   }
   draw() {
     // every frame it takes 3 pixes and moves the image to the left
-    this.x -= 4;
+    this.x -= 5;
     // FIRST IMAGE being drawn: starts at 0 and it goes all the way out of canvas
     image(bgImage, this.x, this.y, this.width, this.height);
     // SECOND IMAGE - STARTS AT THE END OF THE FIRST ONE

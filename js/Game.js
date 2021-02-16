@@ -1,7 +1,7 @@
 class Game {
   constructor() {
     this.background = new Background();
-    // this.player = new Player();
+    this.player = new Player();
     this.obstacles = [];
     this.awards = [];
     this.isRunning = false;
@@ -12,8 +12,12 @@ class Game {
     this.background.setup();
   }
 
+  keyPressed() {
+    this.player.keyPressed();
+  }
+
   draw() {
     this.background.draw();
-    // this.player.draw();
+    this.player.draw();
   }
 }

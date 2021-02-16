@@ -17,19 +17,20 @@ class Player {
   }
 
   // if the jumpCount is 2 (the user has done a double jump) we do nothing
-  // otherwise increase the jumpCount, we remove y so that the viking goes up, and we remove some velocity so that we have a little of resistance going up and an ever growing velocity when we're crashing down
+  // otherwise increase the jumpCount, we remove y so that the player goes up, and we remove some velocity so that we have a little of resistance going up and an ever growing velocity when we're crashing down
   jump() {
     if (this.jumpCount === 2) {
       return;
     }
     this.jumpCount++;
     this.y -= 20;
-    this.velocity -= 5;
+    this.velocity -= 6;
   }
 
   draw() {
-    // increase the velocity according to how long the user has been flying
+    // increase the velocity according to how long the player has been flying
     this.velocity += GRAVITY;
+
     // if the user is in the air, pull the user closer down
     this.y += this.velocity;
 

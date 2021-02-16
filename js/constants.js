@@ -5,7 +5,7 @@ const HEIGHT = 840;
 const WIDTH = 1440;
 
 // constant value that will be working on pulling the player down
-const GRAVITY = 0.2;
+const GRAVITY = 0.3;
 
 // background image
 let bgImage;

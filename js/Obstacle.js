@@ -8,7 +8,7 @@ class Obstacle {
     this.y = random(0, HEIGHT);
   }
 
-  // every frame it moves the obstacle to the left (3 pixels)
+  // every frame it moves the obstacle to the left (4 pixels)
   draw() {
     this.x -= 4;
     image(jimObstacle, this.x, this.y, this.width, this.height);

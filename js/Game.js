@@ -22,6 +22,22 @@ class Game {
 
     // frameCount is always counting + 1 on every loop of the function draw
     // if base is 60frames/second. 👇 means every 1,5s(90 frames = 1.5seconds) push / create a new obstacle on the array
+
+    // for AWARDS
+    if (frameCount % 90 === 0) {
+      this.awards.push(new Award());
+    }
+
+    // array of awards. for every single award in the array we will:
+    this.awards.forEach((award, index) => {
+      award.draw();
+
+      if (award.x <= -award.width) {
+        this.awards.splice(index, 1);
+      }
+    });
+
+    //FOR OBSTACLES
     if (frameCount % 90 === 0) {
       this.obstacles.push(new Obstacle());
     }

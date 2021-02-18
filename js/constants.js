@@ -1,5 +1,5 @@
 // height of our canvas
-const HEIGHT = 840;
+const HEIGHT = 820;
 
 // width of our canvas
 const WIDTH = 1440;

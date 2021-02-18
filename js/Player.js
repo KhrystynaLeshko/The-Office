@@ -4,7 +4,7 @@ class Player {
     this.y = 50;
     this.width = 150;
     this.height = 150;
-    this.floor = 600;
+    this.floor = 620;
     this.velocity = 0;
     this.jumpCount = 0;
   }
@@ -23,7 +23,7 @@ class Player {
       return;
     }
     this.jumpCount++;
-    this.y -= 20;
+    this.y -= 50;
     this.velocity -= 6;
   }
 

@@ -2,6 +2,7 @@
 class WonGame {
   constructor() {}
   draw() {
+    console.log("STAAAAAAPH!");
     background(0);
     textSize(60);
     fill(153, 51, 153);

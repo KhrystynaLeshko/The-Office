@@ -19,8 +19,8 @@ function preload() {
   beetAward = loadImage("../assets/beetAward.png");
   jimObstacle = loadImage("../assets/jimObstacle.png");
 
-  winGame = loadImage("../assets/winGame2.jpeg");
-  lostGame = loadImage("../assets/lostGame.jpg");
+  wonGameImg = loadImage("../assets/winGame2.jpeg");
+  lostGameImg = loadImage("../assets/lostGame.jpg");
   gameMusic = loadSound("../assets/The Office.mp3");
 }
 

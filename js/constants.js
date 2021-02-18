@@ -23,7 +23,7 @@ let jimObstacle;
 let gameMusic;
 
 // win game page image
-let winGame;
+let wonGameImg;
 
 // lost game page image
-let lostGame;
+let lostGameImg;

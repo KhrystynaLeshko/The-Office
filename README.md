@@ -21,6 +21,6 @@ I can see that as a very real possibility.
 Four hundred and ninety-four months?
 I can see that happening.
 
-![startGame Page](/assets/startGamePage.png)
+![startGame Page](/assets/intro.png)
 
 **[- Link to the game -](https://khrystynaleshko.github.io/The-Office/)**

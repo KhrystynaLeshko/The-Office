@@ -1,7 +1,7 @@
 class Player {
   constructor() {
     this.x = 50;
-    this.y = 50;
+    this.y = 0;
     this.width = 150;
     this.height = 150;
     this.floor = 620;
@@ -23,8 +23,8 @@ class Player {
       return;
     }
     this.jumpCount++;
-    this.y -= 70;
-    this.velocity -= 6;
+    this.y -= 80;
+    this.velocity -= 7;
   }
 
   draw() {

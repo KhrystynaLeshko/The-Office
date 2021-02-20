@@ -23,9 +23,12 @@ class Game {
   }
 
   draw() {
+    // calls lostGame function
     if (this.endGame === "lose") {
       return this.assistantToTHERegionalManager();
     }
+
+    // calls wonGame function
     if (this.endGame === "win") {
       return this.angelaBearsBeetsBattlestarGalactica();
     }
@@ -55,12 +58,13 @@ class Game {
       if (award.x <= -award.width) {
         this.awards.splice(index, 1);
       }
+
       // check if it is coliding with the player
       if (this.collisionCheck(this.player, award)) {
         this.points += 1;
         award.y = -200;
 
-        if (this.points >= 1) {
+        if (this.points >= 2) {
           this.endGame = "win";
           return;
         }
@@ -92,7 +96,7 @@ class Game {
     });
   }
 
-  // calling lostGame page
+  // calling lostGame page when colliding with obstacle
   assistantToTHERegionalManager() {
     noLoop();
     console.log("STAAAAAAPH!");
@@ -100,8 +104,7 @@ class Game {
     gameMusic.stop();
   }
 
-  // calling won game
-
+  // calling won game when reaching the max points
   angelaBearsBeetsBattlestarGalactica() {
     clear();
     this.wonGame.draw();

@@ -56,6 +56,13 @@ class Game {
       if (this.collisionCheck(this.player, award)) {
         this.points += 1;
         award.y = -200;
+
+        if (this.points >= 1) {
+          clear();
+          this.wonGame.draw();
+          noLoop();
+          gameMusic.stop();
+        }
       }
     });
 
@@ -91,6 +98,16 @@ class Game {
     this.lostGame.draw();
     gameMusic.stop();
   }
+
+  // calling won game
+
+  // angela() {
+  //   if (this.points >= 2) {
+  //     clear();
+  //     this.wonGame.draw();
+  //     noLoop();
+  //   }
+  // }
 
   // checking if there is a collision between a player and an obstacle
   collisionCheck(player, obstacle) {

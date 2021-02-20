@@ -23,8 +23,11 @@ class Game {
   }
 
   draw() {
-    if (this.endGame) {
-      return this.toby();
+    if (this.endGame === "lose") {
+      return this.assistantToTHERegionalManager();
+    }
+    if (this.endGame === "win") {
+      return this.angelaBearsBeetsBattlestarGalactica();
     }
 
     this.background.draw();
@@ -58,10 +61,8 @@ class Game {
         award.y = -200;
 
         if (this.points >= 1) {
-          clear();
-          this.wonGame.draw();
-          noLoop();
-          gameMusic.stop();
+          this.endGame = "win";
+          return;
         }
       }
     });
@@ -86,13 +87,13 @@ class Game {
         // its out choice we can do what we want to:
         // end game, add levels, remove lives, etc
         console.log("WATCH OUT FOR THE ENEMY");
-        this.endGame = true;
+        this.endGame = "lose";
       }
     });
   }
 
   // calling lostGame page
-  toby() {
+  assistantToTHERegionalManager() {
     noLoop();
     console.log("STAAAAAAPH!");
     this.lostGame.draw();
@@ -101,13 +102,12 @@ class Game {
 
   // calling won game
 
-  // angela() {
-  //   if (this.points >= 2) {
-  //     clear();
-  //     this.wonGame.draw();
-  //     noLoop();
-  //   }
-  // }
+  angelaBearsBeetsBattlestarGalactica() {
+    clear();
+    this.wonGame.draw();
+    noLoop();
+    gameMusic.stop();
+  }
 
   // checking if there is a collision between a player and an obstacle
   collisionCheck(player, obstacle) {

@@ -5,7 +5,7 @@ class WonGame {
     background(0);
     textSize(60);
     fill(255, 255, 255);
-    text("YOU WON", 600, 100);
+    text("YOU WON!", 600, 100);
     textSize(30);
     fill(250);
     text("Your score is amazing, Übermensch!", 470, 160);

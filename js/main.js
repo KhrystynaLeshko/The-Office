@@ -14,14 +14,14 @@ startButton.addEventListener("click", function (event) {
 
 // preload all extra assets
 function preload() {
-  bgImage = loadImage("../assets/farmBackground.png");
-  player = loadImage("../assets/dwightPlayer.png");
-  beetAward = loadImage("../assets/beetAward.png");
-  jimObstacle = loadImage("../assets/jimObstacle.png");
+  bgImage = loadImage("./assets/farmBackground.png");
+  player = loadImage("./assets/dwightPlayer.png");
+  beetAward = loadImage("./assets/beetAward.png");
+  jimObstacle = loadImage("./assets/jimObstacle.png");
 
-  wonGameImg = loadImage("../assets/winGame2.jpeg");
-  lostGameImg = loadImage("../assets/lostGame.jpg");
-  gameMusic = loadSound("../assets/The Office.mp3");
+  wonGameImg = loadImage("./assets/winGame2.jpeg");
+  lostGameImg = loadImage("./assets/lostGame.jpg");
+  gameMusic = loadSound("./assets/The Office.mp3");
 }
 
 // gets called 60x a second

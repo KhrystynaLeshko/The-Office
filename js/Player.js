@@ -23,7 +23,7 @@ class Player {
       return;
     }
     this.jumpCount++;
-    this.y -= 80;
+    this.y -= 200;
     this.velocity -= 7;
   }
 

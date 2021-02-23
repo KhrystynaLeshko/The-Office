@@ -36,7 +36,7 @@ class Game {
     this.background.draw();
     this.player.draw();
 
-    // draw point on background
+    // draw point on background of the game
     image(beetAward, 100, 75, 40, 40);
     textSize(30);
     textStyle(BOLD);
@@ -64,7 +64,7 @@ class Game {
         this.points += 1;
         award.y = -200;
 
-        if (this.points >= 2) {
+        if (this.points >= 5) {
           this.endGame = "win";
           return;
         }

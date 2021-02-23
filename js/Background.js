@@ -6,10 +6,12 @@ class Background {
     this.width = WIDTH;
     this.height = HEIGHT;
   }
+
   setup() {
     this.width = WIDTH;
     this.height = HEIGHT;
   }
+
   draw() {
     // every frame it takes 3 pixes and moves the image to the left
     this.x -= 4;

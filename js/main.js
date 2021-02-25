@@ -5,7 +5,7 @@ const game = new Game();
 // to 'grab' starting page, start & try again buttons
 const startingPage = document.querySelector(".startingPage");
 const startButton = document.querySelector(".startButton");
-const tryAgainButton = document.querySelector(".tryAgainButtonLost");
+// const tryAgainButton = document.querySelector(".tryAgainButtonLost");
 
 // connect start button with game canvas
 startButton.addEventListener("click", function (event) {

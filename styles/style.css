@@ -54,3 +54,16 @@ h4 {
   border-radius: 5%;
   border-color: rgb(255, 255, 255);
 }
+
+.tryAgainButtonWon {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  width: 300px;
+  position: relative;
+  bottom: 90px;
+  left: 570px;
+  padding: 10px;
+  background-color: #d7977d;
+  border-radius: 5%;
+  border-color: rgb(255, 255, 255);
+}

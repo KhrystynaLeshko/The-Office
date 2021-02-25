@@ -99,15 +99,15 @@ class Game {
   // calling lostGame page when colliding with obstacle
   assistantToTHERegionalManager() {
     noLoop();
-    console.log("STAAAAAAPH!");
     this.lostGame.draw();
 
-    // creating button at the end game page
+    // creating button at the Lost game page
     const button = document.createElement("button");
     button.innerText = "touch me - that's what she said";
     document.body.appendChild(button);
     button.classList.add("tryAgainButtonLost");
 
+    // button restarts the game
     button.onclick = () => {
       location.reload();
     };
@@ -117,10 +117,23 @@ class Game {
 
   // calling won game when reaching the max points
   angelaBearsBeetsBattlestarGalactica() {
-    clear();
-    this.wonGame.draw();
+    // clear();
     noLoop();
+    this.wonGame.draw();
     gameMusic.stop();
+
+    // creating button at the Won game page
+    const anotherButton = document.createElement("button");
+    anotherButton.innerText = "touch me - that's what she said";
+    document.body.appendChild(anotherButton);
+    anotherButton.classList.add("tryAgainButtonWon");
+
+    //button restarts the game
+    anotherButton.onclick = () => {
+      location.reload();
+    };
+
+    // gameMusic.stop();
   }
 
   // checking if there is a collision between a player and an obstacle

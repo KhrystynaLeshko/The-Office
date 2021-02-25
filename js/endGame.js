@@ -15,7 +15,7 @@ class WonGame {
     fill(250);
     text(`You've collected ${game.points} beets!`, 600, 200);
 
-    image(wonGameImg, 480, 250, 500, 500);
+    image(wonGameImg, 480, 220, 500, 500);
   }
 }
 

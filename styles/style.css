@@ -40,3 +40,17 @@ h4 {
   background-color: rgba(217, 213, 93, 255);
   box-shadow: 10px 5px 5px #db4256;
 }
+
+.tryAgainButtonLost {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  width: 300px;
+  position: relative;
+  bottom: 140px;
+  left: 570px;
+  padding: 10px;
+  background-color: #2a4d83;
+  /* box-shadow: 10px 5px 5px #dedfc0; */
+  border-radius: 5%;
+  border-color: rgb(255, 255, 255);
+}

@@ -1,11 +1,13 @@
 // An instance that will hold all of the information of our game
 const game = new Game();
 
+// DOM manipulations
+// to 'grab' starting page, start & try again buttons
 const startingPage = document.querySelector(".startingPage");
 const startButton = document.querySelector(".startButton");
+const tryAgainButton = document.querySelector(".tryAgainButtonLost");
 
-// connect button with game canvas
-
+// connect start button with game canvas
 startButton.addEventListener("click", function (event) {
   startingPage.style.display = "none";
   game.isRunning = true;

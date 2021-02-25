@@ -64,7 +64,7 @@ class Game {
         this.points += 1;
         award.y = -200;
 
-        if (this.points >= 5) {
+        if (this.points >= 2) {
           this.endGame = "win";
           return;
         }
@@ -101,6 +101,17 @@ class Game {
     noLoop();
     console.log("STAAAAAAPH!");
     this.lostGame.draw();
+
+    // creating button at the end game page
+    const button = document.createElement("button");
+    button.innerText = "touch me - that's what she said";
+    document.body.appendChild(button);
+    button.classList.add("tryAgainButtonLost");
+
+    button.onclick = () => {
+      location.reload();
+    };
+
     gameMusic.stop();
   }
 

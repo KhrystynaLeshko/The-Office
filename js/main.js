@@ -2,7 +2,7 @@
 const game = new Game();
 
 // DOM manipulations
-// to 'grab' starting page, start & try again buttons
+// to 'grab' starting page & start button
 const startingPage = document.querySelector(".startingPage");
 const startButton = document.querySelector(".startButton");
 // const tryAgainButton = document.querySelector(".tryAgainButtonLost");

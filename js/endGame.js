@@ -31,7 +31,7 @@ class LostGame {
 
     textSize(25);
     fill(250);
-    text(`Question. Only ${game.points} beet(s)?!`, 550, 150);
+    text(`Question. Only ${game.points} beet(s)?!`, 550, 170);
 
     image(lostGameImg, 480, 250, 500, 400);
   }

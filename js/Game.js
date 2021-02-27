@@ -64,7 +64,7 @@ class Game {
         this.points += 1;
         award.y = -200;
 
-        if (this.points >= 2) {
+        if (this.points >= 10) {
           this.endGame = "win";
           return;
         }

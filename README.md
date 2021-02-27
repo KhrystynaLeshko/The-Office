@@ -24,3 +24,5 @@ I can see that happening.
 ![startGame Page](/assets/intro.png)
 
 **[- Link to the game -](https://khrystynaleshko.github.io/The-Office/)**
+
+# The Funniest Game Award (WD Remote bootcamp 2021)

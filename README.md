@@ -25,4 +25,4 @@ I can see that happening.
 
 **[- Link to the game -](https://khrystynaleshko.github.io/The-Office/)**
 
-:tada: The Funniest Game Award :tada:(WD Remote bootcamp 2021)
+:tada: The Funniest Game Award :tada:(Ironhack WD Remote bootcamp 2021)
